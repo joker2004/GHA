@@ -1,0 +1,22 @@
+= 0.1.0 =
+ * NEW: Option to display post excerpt.
+ * NEW: Option to hide post media.
+ * NEW: Layout settings for footer items.
+ * IMPROVED: Styling config.
+ * IMPROVED: Styling sidebar search form.
+ * FIXED: post type layout issue.
+ * FIXED: Single post cover image didn't show when homepage displays as latest posts.
+ * FIXED: Single post title issue.
+
+= 0.0.9 =
+ * IMPROVED: Improve dashboard CSS style.
+ * IMPROVED: Update new primary color.
+ * IMPROVED: Update theme screenshot to matching the default setting.
+ * FIXED: Mobile menu icon color issue.
+ * ADD: Recommend plugins.
+
+= 0.0.8 =
+* UPDATED: Improve theme setting copy, ready for translation.
+
+= 0.0.7 =
+* Release!

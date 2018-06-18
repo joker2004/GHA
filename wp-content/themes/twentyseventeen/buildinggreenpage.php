@@ -73,6 +73,6 @@ the_post_thumbnail();
     clear: both;
 }
 .build{
-  max-width:1860px;
+  max-width:1920px;
 }
 </style>

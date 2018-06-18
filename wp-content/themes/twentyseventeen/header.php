@@ -27,7 +27,7 @@
 	<div class="site-header-main">
 		<div class="header-logo" >
 			<a id="header"href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img style="height:47px; width:143px;background:none;" src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
+				<img style="height:47px; width:143px;background:none;margin-left: 262px;" src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
 			</a>
 		</div>
     <div class="header-right" >
@@ -40,12 +40,12 @@
 </div>
 <div class="locate">
   <label >
-<input type="text" style="padding-left:40px;" placeholder="Set build location">
+<input type="text" style="padding-left:40px;border-radius:4px; width:196px; height:41px;" placeholder="Set build location">
 </label>
 </div>
 <div class = header-last>
 <form>
-<input type="button" value="Make an Enquiry" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+<input type="button" style="border-radius:4px; width:163px; height:41px;" value="Make an Enquiry" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
 </form>
 </div>
 </div >
@@ -76,8 +76,9 @@
 .locate label {
   position: relative;
   float:left;
-  width: 15%;
+
   padding-top: 20px;
+
 
 
 }
@@ -89,11 +90,13 @@
   top: 20px;
   bottom: 0;
   width: 25px;
+
   background: url("<?php echo get_template_directory_uri();?>/images/search.svg") center / contain no-repeat ;
 }
 
 input {
   padding: 10px 30px;
+  border-radius:10px;
 }
 .header-last {
   float:left;
@@ -102,5 +105,8 @@ input {
 }
 .site-header-main a{
   width:100% !important;
+}
+.site-header {
+  background-color: none;
 }
 </style>

@@ -6,7 +6,7 @@ if ( has_post_thumbnail() ) {
 the_post_thumbnail();
 }  ?>
 
-
+<div class="build">
 <section>
 <div class="purple-btn-container left">
     <a href="<?php echo esc_url( home_url( '/home-design' ) ); ?>">
@@ -16,8 +16,9 @@ the_post_thumbnail();
 </div>
 </section>
 <div class="top_rectangle"></div>
-<p>Showing 1-24 of 94 Energy efficient home designs</p>
-
+<div class="show_list">
+<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;">Showing 1-24 of 94 Energy efficient home designs</p>
+<div>
 
 
 <div class="grid_view">
@@ -123,10 +124,11 @@ the_post_thumbnail();
 <form style="text-align:center">
 <input style="text-align:center" type="button" value="SEE MORE">
 </form>
-
+</div>
+<?php get_footer(); ?>
 <style>
 body {
-  width: 80%;
+  width: 1920px;
   margin: 30px auto;
   font-family: sans-serif;
 }
@@ -189,7 +191,7 @@ figcaption {
   margin-top: 15px;
 }
 
-img {
+.grid_view img {
   border: none;
   max-width: 100%;
   height: auto;
@@ -198,6 +200,11 @@ img {
   transition: transform .2s ease-in-out;
 }
 
+img {
+  width:1860px;
+  height:500px;
+  margin-left:30px;
+}
 .p a {
   display: inline;
   font-size: 13px;
@@ -219,6 +226,9 @@ img {
   height:128px;
   border:1px solid #DDDDDD;
   opacity:100%;
+}
+.build{
+  width:1920px;
 }
 
 

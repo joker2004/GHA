@@ -1,0 +1,32 @@
+2018-06-18T05:18:31+00:00 CRITICAL Uncaught Error: Call to undefined function aa_resized_image() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:46
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-18T05:23:36+00:00 CRITICAL Uncaught Error: Call to undefined function aa_resized_image() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:46
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-18T05:24:02+00:00 CRITICAL Uncaught Error: Call to undefined function aa_resized_image() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:46
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-18T05:30:01+00:00 CRITICAL Uncaught Error: Call to undefined function aa_resized_image() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-post.php:28
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+

@@ -62,6 +62,8 @@ function twentyseventeen_setup() {
 	register_nav_menus( array(
 		'top'    => __( 'Top Menu', 'twentyseventeen' ),
 		'social' => __( 'Social Links Menu', 'twentyseventeen' ),
+		'bottom1' => __('Bottom 1 Menu', 'twentyseventeen'),
+		'bottom2' =>__('Bottom 2 Menu','twentyseventeen'),
 	) );
 
 	/*

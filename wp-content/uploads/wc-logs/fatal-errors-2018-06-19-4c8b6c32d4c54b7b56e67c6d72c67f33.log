@@ -1,0 +1,58 @@
+2018-06-19T02:32:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 0 passed in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php on line 14 and exactly 2 expected in C:\xampp\htdocs\mysite\wp-includes\category-template.php:1183
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php(14): get_the_terms()
+#1 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-06-19T02:33:22+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_id() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:14
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-19T02:46:50+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_terms() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-19T02:49:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_terms() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-19T02:49:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_terms() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2018-06-19T02:50:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_object_terms(), 0 passed in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php on line 17 and at least 2 expected in C:\xampp\htdocs\mysite\wp-includes\taxonomy.php:1859
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php(17): wp_get_object_terms()
+#1 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-06-19T02:50:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_terms() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\single-home.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+

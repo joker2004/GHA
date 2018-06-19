@@ -11,10 +11,42 @@
  */
 
 get_header(); ?>
+<!--?php
+global $post;
+$terms = wp_get_post_terms( $post->ID, 'bedroom');
+print_r($terms);
+$taxonomy_names = get_post_taxonomies( );
+  print_r( $taxonomy_names );
+    //echo get_post_terms();
+ ?-->
+<div style="float:left;width:707px;height:747px;margin-left:27px;">
+  <p style="">Menzies</p>
+  <p>Making room for the important things. Indoor and Outdoor Living at it's best!</p>
+
+  <div class="logo_grid">
+
+       <figure>
+          <img src="<?php echo get_field("ee7")["url"];?>" alt="Sample photo">
+          <figurecaption style="font-size:15px">Water saving tapware from Reece<figurecaption>
+          </figure>
+          <figure>
+             <img src="<?php echo get_field("ee7")["url"];?>" alt="Sample photo">
+             <figurecaption style="font-size:15px">Water saving tapware from Reece<figurecaption>
+
+             </figure>
+             <figure>
+                <img src="<?php echo get_field("ee7")["url"];?>" alt="Sample photo">
+                <figurecaption style="font-size:15px">Water saving tapware from Reece<figurecaption>
+                </figure>
+  </div>
+</div>
+<div class="image" style="float:left;max-width:1160px;">
 <?php
 if ( has_post_thumbnail() ) {
 the_post_thumbnail();
 }  ?>
+</div>
+<div style="clear:both">
 
 <div class="wrap">
 	<div id="primary" class="content-area">
@@ -29,6 +61,33 @@ the_post_thumbnail();
 	</div><!-- #primary -->
 	<!--?php get_sidebar(); ?-->
 </div><!-- .wrap -->
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.grid img {
+  /*border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);*/
+  max-width: 100%;
+}
+.logo_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.logo_grid img {
+  /*border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);*/
+  max-width: 100%;
+}
+
+</style>
+
+
 
 <div class="full-width-wtsinbook">
       <div class="wrapper blog-content book-new">
@@ -100,11 +159,95 @@ the_post_thumbnail();
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="energyFeatures" style="width:1009px;margin:auto;">
+<p style="font-size:32px;weight:bold;font-family:lato;">Energy efficient features</p>
+<main class="grid">
+
+<figure>
+  <img src="<?php echo get_field("ee1")["url"];?>" alt="Sample photo">
+  <figurecaption>Energy efficient doors<figurecaption>
+</figure>
+<figure>
+  <img src="<?php echo get_field("ee2")["url"];?>" alt="Sample photo">
+  <figurecaption>Double glazed windows<figurecaption>
+  </figure>
+<figure>
+    <img src="<?php echo get_field("ee3")["url"];?>" alt="Sample photo">
+    <figurecaption>LED lighting<figurecaption>
+    </figure>
+<figure>
+   <img src="<?php echo get_field("ee4")["url"];?>" alt="Sample photo">
+   <figurecaption>Optimal air circulation<figurecaption>
+   </figure>
+<figure>
+   <img src="<?php echo get_field("ee5")["url"];?>" alt="Sample photo">
+   <figurecaption>Superior insulation<figurecaption>
+   </figure>
+<figure>
+    <img src="<?php echo get_field("ee6")["url"];?>" alt="Sample photo">
+    <figurecaption>Solar hot water system<figurecaption>
+    </figure>
+<figure>
+   <img src="<?php echo get_field("ee7")["url"];?>" alt="Sample photo">
+   <figurecaption>Water saving tapware from Reece<figurecaption>
+   </figure>
+<figure>
+   <img src="<?php echo get_field("ee8")["url"];?>" alt="Sample photo">
+   <figurecaption>Premium kitchen appliances from SMEG<figurecaption>
+   </figure>
+</main>
+</div>
+<div style="width:1009px;margin:auto;">
+  <p style="font-size:32px;weight:bold;font-family:lato;">Floor plans</p>
+  <figure>
+  <img style="border:none;"src="<?php echo get_field("floor_plan")["url"];?>" alt="">
+</figure>
+</div>
+
+<div class="page-content">
+<?php
+    $list1Val = get_post_meta($post->ID, 'list1', true);
+    if (!empty($list1Val)) {
+    ?>
+        <div class="list1">
+            <?php echo $list1Val; ?>
+        </div>
+    <?php } ?>
+
+    <?php
+    $list2Val = get_post_meta($post->ID, 'list2', true);
+    if (!empty($list2Val)) {
+    ?>
+        <div class="list2">
+            <?php echo $list2Val; ?>
+        </div>
+    <?php } ?>
+  </div>
+
+
+<div class="page-content">
+    <?php
+    while ( have_posts() ) : the_post();
+        the_content();
+    endwhile;
+    wp_reset_query();
+    ?>
+</div>
+
+
+
+
+
+
+
+
 <?php get_footer();?>
 
 <style>
 .tab {
-/*overflow: hidden;*/
+overflow: hidden;
 text-align: center;
 width: 100%;
 /*border: 1px solid #ccc*/;
@@ -122,7 +265,60 @@ width: 100%;
 
 }
 
+.page-content{
+  width:1009px;
+  margin:auto;
+}
 
+.page-content .list1,
+.page-content .list2 {
+	margin: 0 0 50px 0;
+}
+.page-content ul {
+	list-style: none;
+	padding: 0;
+
+	columns: 2;
+	-webkit-columns:60px 2;
+	-moz-columns: 2;
+  /*-webkit-column-count: 2;
+   -moz-column-count: 2;
+   column-count: 2;
+
+   -webkit-column-gap: -145px;
+   -moz-column-gap: 0px;
+   column-gap: 0px;*/
+
+}
+
+.page-content ul li {
+	padding: 0 0 0 34px;
+  font-size:18px;
+  font-family: lato;
+  font-weight: lighter;
+}
+
+.page-content ul li:before {
+	content: "\2022";
+	padding: 0 25px 0 0;
+	margin: 0 0 0 -34px;
+}
+
+.page-content h2,
+.page-content h3 {
+	font-family: lato;
+	font-size: 32px;
+	color: #1D3A49;
+}
+.page-content h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.page-content h3 {
+	margin: 0 0 15px 0;
+}
 /* Style the buttons that are used to open the tab content */
 .whywrote {
 border: none;
@@ -175,13 +371,13 @@ width:570px;
 height:173px;
 overflow:hidden;
 }
-.whatsinbook{
-  /*max-height: 120px;*/
+/*.whatsinbook{
+  max-height: 120px;
   position: relative;
   overflow: hidden;
-}
+}*/
 
-.whatsinbook .read-more {
+/*.whatsinbook .read-more {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -189,9 +385,9 @@ overflow:hidden;
   text-align: center;
   margin: 0; padding: 30px 0;
 
-  /* "transparent" only works here because == rgba(0,0,0,0) */
+   "transparent" only works here because == rgba(0,0,0,0)
   background-image: linear-gradient(to bottom, transparent, black);
-}
+}*/
 </style>
 <script>
 
@@ -217,5 +413,90 @@ function openColumn(evt, product_detail) {
 	evt.currentTarget.className += " active";
 }
 
+jQuery(document).ready(function($) {
+    //toggle the component with class accordion-body
+	$(".accordion-head").click(function() {
+		if ($('.accordion-body').is(':visible')) {
+			$(".accordion-body").slideUp(300);
+			$(".plusminus").text('+');
+		}
+        if ( $(this).next(".accordion-body").is(':visible')) {
+            $(this).next(".accordion-body").slideUp(300);
+            $(this).children(".plusminus").text('+').removeClass('open');
+        } else {
+            $(this).next(".accordion-body").slideDown(300);
+            $(this).children(".plusminus").text('-').addClass('open');
+        }
+	});
+})
+
 
 </script>
+<style>
+
+.page-content .accordion-container {
+	width: 100%;
+	padding: 55px 0;
+}
+
+.page-content .accordion-main-head {
+	font-family: Lato;
+	font-size: 32px;
+	/*text-transform: uppercase;*/
+  weight:bold;
+	color: #484848;
+	margin: 0 0 10px 0;
+}
+
+.page-content .accordion-section {
+	width: 100%;
+	border-bottom: 1px solid #A9BBBC;
+}
+
+.page-content .accordion-section:first-child {
+	border-top: 1px solid #A9BBBC;
+}
+
+.page-content .accordion-head {
+	font-family:Lato;
+    font-size: 20px;
+	color: #557700;
+   	cursor: pointer;
+	padding: 20px 85px 20px 35px;
+	position: relative;
+}
+
+.page-content .accordion-body {
+	font-family: 'Rubik-Regular';
+    font-size: 12px;
+	color: #666666;
+	padding: 2px 85px 35px 90px;
+}
+
+.page-content .plusminus {
+	font-family: 'WeissenhofGrotesk-Medium';
+	font-size: 25px;
+	float: right;
+	position: absolute;
+	top: 15px;
+	right: 35px;
+  font-weight:bold;
+}
+
+.page-content .plusminus.open {
+	top: 14px;
+	right: 38px;
+}
+
+.page-content #walkthrough-container {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto 100px auto;
+}
+
+.page-content #walkthrough-container iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+</style>

@@ -7,7 +7,12 @@
 
 get_header(); ?>
 
- <!--Blog Posts-->
+
+<?php
+$taxonomy= get_post_taxonomies( );
+//  print_r( $taxonomy_names );
+  echo wp_get_object_terms();
+ exit;?>
  <?php if(have_posts()): while(have_posts()): the_post(); ?>
             <div class="wrapper blog-content default-post">
 				<!--div class="inner-wrap-head">

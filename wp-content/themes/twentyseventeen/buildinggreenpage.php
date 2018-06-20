@@ -135,9 +135,11 @@ get_header();?>
 
 
             <!-- Tab content -->
-            <div id="step1" class="tabcontent" style="display: block">
-              <img style="border:none;"src="<?php echo get_field("energy_efficient")["url"];?>" alt="">
-              <div class="whatsinbook"><?php if(get_field("step_1") != "") { ?>
+            <div id="step1" class="tabcontent" style="display: block;position:relative;">
+              <img style="border:none;width:100%;"src="<?php echo get_field("energy_efficient")["url"];?>" alt="">
+
+              <div class="whatsinbook" style="position: absolute;bottom: 20px;right: 20px;background-color: black;color: white;padding-left: 20px;padding-right: 20px;"><?php if(get_field("step_1") != "") { ?>
+
     <div class="w-inbk-shortdesc" style="font-size: 16px;"><?php echo get_field("step_1"); ?></div>
     <?php } ?></div>
             </div>
@@ -175,8 +177,7 @@ get_header();?>
 
 
           </div>
-        </div>
-      </div>
+      
 
 
 
@@ -249,7 +250,8 @@ width: 100%;
   margin-left: auto;
   width:1396px;
   height:80px;
-  border:1px solid #DDDDDD;
+  border: 1px solid #ccc;
+   background-color: #f1f1f1;
   opacity:100%;
 
 

@@ -5,7 +5,6 @@ get_header();?>
 if ( has_post_thumbnail() ) {
 the_post_thumbnail();
 }  ?>
-
 <div class="build">
 <section>
 <div class="purple-btn-container left">
@@ -16,207 +15,170 @@ the_post_thumbnail();
 </div>
 </section>
 <div class="top_rectangle"></div>
-<div class="show_list">
+
 <p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;">Showing 1-24 of 94 Energy efficient home designs</p>
-<div>
-
-
-<div class="grid_view">
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg" alt="">
-      <figcaption>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg" alt="">
-       <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg" alt="">
-      <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
 </div>
 
-<p class="p">Showing 1-24 of 94 Energy efficient home designs</p>
-<form style="text-align:center">
-<input style="text-align:center" type="button" value="SEE MORE">
-</form>
+<div class="posts-content">
+<?php
+//$exclude_id
+$r_arg = array(
+    'post_type' => 'home',
+    /*'post_status' => 'publish',
+    'posts_per_page'	=> -1,
+    'tax_query' => array(
+          array(
+            'taxonomy' => 'recipe_category',
+            'field' => 'slug',
+            'terms' => $slug_t,
+          ),
+        ),*/
+  );
+if($exclude_id){
+  $r_arg['post__not_in'] = array($exclude_id);
+}
+$wpex_port_query = new WP_Query($r_arg);
+$hideShowClass = " active";
+$i = 0;
+$total_post = 0;
+$remainPost = 0;
+if( $wpex_port_query->posts ) {
+  $total_post = $wpex_port_query->found_posts;
+  $remainPost = $total_post - 6;
+   while ( $wpex_port_query->have_posts() ) : $wpex_port_query->the_post();
+
+    $termsArray = get_the_terms( $post->ID, "recipe_category" );
+    $termsString = "";
+    $curTerms = array();
+    foreach ( $termsArray as $term ) {
+      $curTerms[] = $term->slug;
+      $termsString .= $term->slug.' ';
+    }
+    if(count($curTerms) == 1 && $curTerms[0] == 'featured-recipes') continue;
+    if($i >= 6) {
+      $hideShowClass = " inactive";
+    } $i++;
+    $active  = "";
+    if($visibleCount != "")
+    {
+      if(count($class)){
+        foreach($class as $_c)
+        {
+          $hideShowClass = " inactive";
+          $checkclass = explode(" ",$termsString);
+
+          if(in_array($_c,$checkclass))
+          {
+            $hideShowClass = "inactive";
+            $active = "active";
+            break;
+          }
+        }
+      }else if($visibleCount >= 1){
+
+        $active = "active";
+        $hideShowClass = "inactive";
+      }
+    }
+
+   ?>
+   <?php  if($visibleCount >= 1 && $active == "active"){ $visibleCount = $visibleCount - 1;  ?>
+   <div id="postid_<?php echo $post->ID; ?>" class="item <?php echo $termsString . $active; ?>" style="">
+   <?php  }else{ ?>
+<div id="postid_<?php echo $post->ID; ?>" class="item <?php echo $termsString . $hideShowClass; ?>" style="">
+   <?php } ?>
+  <div class="rp-item-inner">
+              <?php  $fimage_url = ''; $url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'medium' ); if($url && isset($url[0])){$fimage_url = $url[0];}
+              //echo $fimage_url;
+    /*$postImageId = get_post_thumbnail_id($post->ID);
+    //echo $postImageId;
+    $postCurImage 	= wp_get_attachment_image_src($postImageId , 'custom-post-list');
+    $fimage_url 	= '';
+  if($postCurImage && count($postCurImage) && $postCurImage[1] == CUSTPOSTLISTWIDTH && $postCurImage[2] == CUSTPOSTLISTHEIGHT){
+      $fimage_url = $postCurImage[0];
+    }else{
+      $fimage_url = aa_resized_image($postImageId,CUSTPOSTLISTWIDTH, CUSTPOSTLISTHEIGHT,true);
+    }*/
+  ?>
+              <div class="thumb" style="background-image: url('<?php echo $fimage_url; ?>')">
+                  <a href="<?php the_permalink(); ?>" data-postid="<?php echo get_the_ID();?>"><div class="view-active">
+                      <span><?php the_title();?></span>
+                  </div></a>
+
+              </div>
+
+  <?php
+  $inlbs = get_field('info_label');
+  ?>
+    <div class="ingredients">
+    <?php
+    if( $inlbs ):
+    foreach( $inlbs as $inlb):
+        $urlIcon = wp_get_attachment_image_src( get_post_thumbnail_id($inlb->ID), 'custom-icon' );
+        if($urlIcon) {
+          $fimage_url = $urlIcon[0];
+        } else {
+          $fimage_url = '';
+        }
+    ?>
+      <span class="<?php echo $inlb->slug ?>" style="background-image: url('<?php echo $fimage_url; ?>')" ><span class="label hide"><?php echo $inlb->post_name; ?></span></span>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    </div>
+    <?php  $sepr_recipe = ""; if(get_field( "preparation_time" ) && get_field( "servings" )) { $sepr_recipe = "|"; }?>
+  <p class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php the_title();?>" data-postid="<?php echo get_the_ID();?>"><?php the_title(); ?></a></p>
+
+  </div>
+          </div>
+
+<?php
+  endwhile;
+  wp_reset_postdata();
+  $total_post = $i;
+  $remainPost = $total_post - 6;
+}
+?>
+
+          <br class="clear" />
 </div>
+<?php $showLoadMore = ""; if($remainPost < 1) { $remainPost = 0;  $showLoadMore = " style='display:none' ";  } ?>
+          <a href="javascript:void(0)" id="loadMoreAction" data-curpage="1" class="btn-red" <?php echo $showLoadMore; ?> data-total="<?php echo $total_post; ?>">Show more recipes (<span><?php echo $remainPost; ?></span>)</a>
+      </div>
+
+      <p class="p">Showing 1-24 of 94 Energy efficient home designs</p>
+      <form style="text-align:center">
+      <input style="text-align:center" type="button" value="SEE MORE">
+      </form>
+
 <?php get_footer(); ?>
 <style>
-body {
-  width: 1920px;
-  margin: 30px auto;
-  font-family: sans-serif;
-}
-
-h3 {
-  text-align: center;
-  font-size: 1.65em;
-  margin: 0 0 30px;
-}
-
-.grid_view {
-  display: flex;
-  flex-wrap: wrap;
-  width:1396px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.grid_view a {
-  display: inline-block;
-  margin-bottom: 135px;
-/*  width: calc(50% - 4px);*/
-  width:452px;
-  height:291px;
-  margin-right: 8px;
-  text-decoration: none;
-  color: black;
-}
-
-.grid_view a:nth-of-type(2n) {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 50em) {
-  .grid_view a {
-  /*width: calc(25% - 6px);*/
-  width:452px;
-  height:291px;
+.posts-content
+  {
+    display: flex;
+    flex-wrap: wrap;
+    width:1396px;
+    margin-right: auto;
+    margin-left: auto;
   }
-
-  .grid_view a:nth-of-type(2n) {
-    margin-right: 8px;
+  .view-active{
+    width:452px;
+    height:291px;
   }
+  .blog-title a{
 
-  .grid_view a:nth-of-type(4n) {
-    margin-right: 0;
   }
-}
-
-.grid_view a:hover img {
-  transform: scale(1.15);
-}
-
-figure {
-  margin: 0;
-  overflow: hidden;
-}
-
-figcaption {
-  margin-top: 15px;
-}
-
-.grid_view img {
-  border: none;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background: #ccc;
-  transition: transform .2s ease-in-out;
-}
-
-img {
-  width:1860px;
-  height:500px;
-  margin-left:30px;
-}
-.p a {
-  display: inline;
-  font-size: 13px;
-  margin: 0;
-  text-decoration: underline;
-  color: blue;
-}
-
-.p {
-  text-align: center;
-  font-size: 13px;
-  padding-top: 100px;
+  .active span{
+  color: #ffffff;
+display: inline-block;
+font-size: 24px;
+line-height: 29px;
+max-width: 90%;
+position: relative;
+top: 247px;
+width: 100%;
+left:17px;
+font-family: lato;
+font-weight: 400;
 }
 .top_rectangle {
   margin-top: 82px;
@@ -227,9 +189,11 @@ img {
   border:1px solid #DDDDDD;
   opacity:100%;
 }
-.build{
-  width:1920px;
-}
 
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
 
 </style>

@@ -200,7 +200,7 @@ the_post_thumbnail();
 </main>
 </div>
 <div style="width:1009px;margin:auto;">
-  <p style="font-size:32px;weight:bold;font-family:lato;">Floor plans</p>
+  <p style="font-size:32px;weight:bold;font-family:lato;">Floorplan</p>
   <figure>
   <img style="border:none;"src="<?php echo get_field("floor_plan")["url"];?>" alt="">
 </figure>
@@ -237,7 +237,9 @@ the_post_thumbnail();
 </div>
 
 
-
+<?php
+  echo do_shortcode('[contact-form-7 id="149" title=”Contact form 1"]'  );
+?>
 
 
 

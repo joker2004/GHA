@@ -1,0 +1,8 @@
+2018-06-21T04:20:26+00:00 CRITICAL Uncaught Error: Call to undefined function base_get_all_custom_fields() in C:\xampp\htdocs\mysite\wp-content\themes\twentyseventeen\homepage.php:6
+Stack trace:
+#0 C:\xampp\htdocs\mysite\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\mysite\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\mysite\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+

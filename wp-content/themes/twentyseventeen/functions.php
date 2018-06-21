@@ -586,3 +586,17 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+if( !function_exists('base_get_all_custom_fields') ) {
+	function base_get_all_custom_fields(){
+		global $post;
+		global $wpdb;
+		$sql = "SELECT * FROM $wpdb->postmeta	WHERE post_id = $post->ID ORDER BY meta_id ASC";
+		$custom_fields = $wpdb->get_results($sql);
+		$custom_field_array = array();
+		foreach($custom_fields as $field) {
+			$custom_field_array["$field->meta_key"] = $field->meta_value;
+		}
+		return $custom_field_array;
+	}
+}

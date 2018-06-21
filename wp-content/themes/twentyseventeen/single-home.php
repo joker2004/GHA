@@ -236,7 +236,34 @@ the_post_thumbnail();
     ?>
 </div>
 
-
+<?php
+//for use in the loop, list 5 post titles related to first tag on current post
+$tags = wp_get_post_tags($post->ID);
+print_r ($tags[0]->name);
+if ($tags) {
+echo 'Related Posts';
+$first_tag = $tags[0]->term_id;
+$args=array(
+  'post_type' => 'home',
+'tag__in' => array($first_tag),
+'post__not_in' => array($post->ID),
+'posts_per_page'=>2,
+'caller_get_posts'=>1
+);
+$my_query = new WP_Query($args);
+if( $my_query->have_posts() ) {echo "true";}
+if( $my_query->have_posts() ) {
+while ($my_query->have_posts()) : $my_query->the_post(); ?>
+<?php  $fimage_url = ''; $url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'medium' ); if($url && isset($url[0])){$fimage_url = $url[0];}?>
+<div class="thumb" style="background-image: url('<?php echo $fimage_url; ?>')">
+<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+</div>
+<?php
+endwhile;
+}
+wp_reset_query();
+}
+?>
 <?php
   echo do_shortcode('[contact-form-7 id="149" title=”Contact form 1"]'  );
 ?>

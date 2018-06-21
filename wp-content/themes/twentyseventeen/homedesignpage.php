@@ -16,7 +16,7 @@ the_post_thumbnail();
 </section>
 <div class="top_rectangle"></div>
 
-<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;">Showing 1-24 of 94 Energy efficient home designs</p>
+<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;">Showing 1-5 of 5 Energy efficient home designs</p>
 </div>
 
 <div class="posts-content">
@@ -103,7 +103,15 @@ if( $wpex_port_query->posts ) {
               <div class="thumb" style="background-image: url('<?php echo $fimage_url; ?>')">
                   <a href="<?php the_permalink(); ?>" data-postid="<?php echo get_the_ID();?>"><div class="view-active">
                       <span><?php the_title();?></span>
-                  </div></a>
+                      </div></a>
+
+                      </div>
+                      <div class="check">
+                     <p class="recipe-info xs-hidden"><?php if(get_field( "landarea" ))
+				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Landarea:</span> <b>'.get_field( "landarea" ).'</b><span class="min-right"></span>';if(get_field( "bedrooms" ))
+				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Bedroom:</span> <b>'.get_field( "bedrooms" ).'</b><span class="min-right"></span>';if(get_field( "bathrooms" ))
+				 echo '<span class="min-left">Cook:</span> <b>'.get_field( "bathrooms" ).'</b><span class="min-right"></span>'; if(get_field( "carspaces" ))
+				 echo '<span class="min-left">Set:</span> <b>'.get_field( "carspaces" ).'</b><span class="min-right"></span>';?></p> <?php  ?>
 
               </div>
 
@@ -126,7 +134,7 @@ if( $wpex_port_query->posts ) {
     <?php endif; ?>
     </div>
     <?php  $sepr_recipe = ""; if(get_field( "preparation_time" ) && get_field( "servings" )) { $sepr_recipe = "|"; }?>
-  <p class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php the_title();?>" data-postid="<?php echo get_the_ID();?>"><?php the_title(); ?></a></p>
+  <!--p class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php the_title();?>" data-postid="<?php echo get_the_ID();?>"><?php the_title(); ?></a></p-->
 
   </div>
           </div>
@@ -145,13 +153,37 @@ if( $wpex_port_query->posts ) {
           <a href="javascript:void(0)" id="loadMoreAction" data-curpage="1" class="btn-red" <?php echo $showLoadMore; ?> data-total="<?php echo $total_post; ?>">Show more recipes (<span><?php echo $remainPost; ?></span>)</a>
       </div>
 
-      <p class="p">Showing 1-24 of 94 Energy efficient home designs</p>
+      <p class="p">Showing 1-5 of 5 Energy efficient home designs</p>
       <form style="text-align:center">
       <input style="text-align:center" type="button" value="SEE MORE">
       </form>
 
 <?php get_footer(); ?>
 <style>
+.min-right {
+  padding-right: 6px !important;
+  top: 0px;
+}
+.min-left {
+  padding-left: 6px !important;
+  top: 0px;
+}
+.xs-hidden {
+    display: block!important;
+}
+.recipe-info {
+    border: 0px;
+    padding: 0px;
+    margin-top: 11px;
+    color: #000000;
+font-size: 16px;
+letter-spacing: 0;
+line-height: 22px;
+padding: 0px 0 14px 0;
+font-family:Helvetica-light;
+}
+
+
 .posts-content
   {
     display: flex;
@@ -163,13 +195,14 @@ if( $wpex_port_query->posts ) {
   .view-active{
     width:452px;
     height:291px;
+    padding-right:20px;
   }
   .blog-title a{
 
   }
   .active span{
   color: #ffffff;
-display: inline-block;
+
 font-size: 24px;
 line-height: 29px;
 max-width: 90%;
@@ -179,6 +212,13 @@ width: 100%;
 left:17px;
 font-family: lato;
 font-weight: 400;
+}
+
+.check span{
+  top:0px!important;
+  color:black;
+  left:0px;
+  font-size:16px;
 }
 .top_rectangle {
   margin-top: 82px;
@@ -194,6 +234,10 @@ font-weight: 400;
   text-align: center;
   font-size: 13px;
   padding-top: 100px;
+}
+.rp-item-inner{
+  padding-right:10px;
+  padding-top:40px;
 }
 
 </style>

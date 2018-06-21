@@ -110,8 +110,8 @@ if( $wpex_port_query->posts ) {
                      <p class="recipe-info xs-hidden"><?php if(get_field( "landarea" ))
 				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Landarea:</span> <b>'.get_field( "landarea" ).'</b><span class="min-right"></span>';if(get_field( "bedrooms" ))
 				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Bedroom:</span> <b>'.get_field( "bedrooms" ).'</b><span class="min-right"></span>';if(get_field( "bathrooms" ))
-				 echo '<span class="min-left">Cook:</span> <b>'.get_field( "bathrooms" ).'</b><span class="min-right"></span>'; if(get_field( "carspaces" ))
-				 echo '<span class="min-left">Set:</span> <b>'.get_field( "carspaces" ).'</b><span class="min-right"></span>';?></p> <?php  ?>
+				 echo '<span class="min-left">Bathrooms:</span> <b>'.get_field( "bathrooms" ).'</b><span class="min-right"></span>'; if(get_field( "carspaces" ))
+				 echo '<span class="min-left">Carspaces:</span> <b>'.get_field( "carspaces" ).'</b><span class="min-right"></span>';?></p> <?php  ?>
 
               </div>
 
@@ -181,6 +181,12 @@ letter-spacing: 0;
 line-height: 22px;
 padding: 0px 0 14px 0;
 font-family:Helvetica-light;
+}
+
+.icon-enable.featured-date {
+  background: rgba(0, 0, 0, 0) url("images/timer.png") no-repeat scroll left 5px / 18px 18px;
+  padding-left: 25px;
+  line-height:26px;
 }
 
 

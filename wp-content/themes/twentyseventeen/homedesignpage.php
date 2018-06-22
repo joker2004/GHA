@@ -1,22 +1,45 @@
 <?php
 /* Template Name: HomeDesign */
 get_header();?>
-<?php
-if ( has_post_thumbnail() ) {
-the_post_thumbnail();
-}  ?>
+
 <div class="build">
 <section>
-<div class="purple-btn-container left">
-    <a href="<?php echo esc_url( home_url( '/home-design' ) ); ?>">
+  <div class="container">
 
 
-    </a>
+  <?php
+  if ( has_post_thumbnail() ) {
+  the_post_thumbnail();
+
+  }  ?>
+  <div class="top-left" style="font-size:42px;color:#ffffff"><?php echo get_field("heading")?></div>
 </div>
+
+
 </section>
+<style>
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    font-family:lato;
+}
+
+
+.top-left {
+    position: absolute;
+    top: 174px;
+    left: 581px;
+    width:718px;
+    weight:bolder;
+
+
+}
+</style>
 <div class="top_rectangle"></div>
 
-<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;"><?php
+<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;"><!--?php
     // Number of products in category
     $pagenum = $query->query_vars['paged'] < 1 ? 1 : $query->query_vars['paged'];
     $first = ( ( $pagenum - 1 ) * $query->query_vars['posts_per_page'] ) + 1;
@@ -24,7 +47,7 @@ the_post_thumbnail();
 
     echo '<p class="results-count">Showing ' . $remainPost . ' of ' .$total_post. ' products in this category</p>';
     /*Showing 1-5 of 5 Energy efficient home designs*/
-?></p>
+?-->Showing 1-7 of 7 Energy efficient home designs</p>
 
 </div>
 
@@ -158,17 +181,17 @@ if( $wpex_port_query->posts ) {
   wp_reset_postdata();
   $total_post = $i;
   $remainPost = $total_post - 6;
-    echo '<p class="results-count">Showing ' . $remainPost . ' of ' .$total_post. ' products in this category</p>';
+
 }
 ?>
 
           <br class="clear" />
 </div>
-<?php $showLoadMore = ""; if($remainPost < 1) { $remainPost = 0;  $showLoadMore = " style='display:none' ";  } ?>
+<?php $showLoadMore = ""; if($remainPost < 5) { $remainPost = 0;  $showLoadMore = " style='display:none' ";  } ?>
           <a href="javascript:void(0)" id="loadMoreAction" data-curpage="1" class="btn-red" <?php echo $showLoadMore; ?> data-total="<?php echo $total_post; ?>">Show more(<span><?php echo $remainPost; ?></span>)</a>
       </div>
 
-      <p class="p">Showing 1-5 of 5 Energy efficient home designs</p>
+      <p class="p">Showing 1-7 of 7 Energy efficient home designs</p>
       <form style="text-align:center">
       <input style="text-align:center" type="button" value="SEE MORE">
       </form>
@@ -272,6 +295,10 @@ font-weight: 400;
 .rp-item-inner{
   padding-right:10px;
   padding-top:40px;
+}
+body{
+  max-width:1860px;
+  margin:auto;
 }
 
 </style>

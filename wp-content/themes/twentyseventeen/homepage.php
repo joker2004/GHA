@@ -17,6 +17,31 @@ exit;}
     }  ?>
     <!--img src="<?php echo get_template_directory_uri();?>/images/Images/homepage-lounge.jpg" alt=""-->
     <div class="centered">
+      <style type="text/css">
+   body {
+         font-family: sans-serif;
+         font-size: 14px;
+   }
+</style>
+
+<title>Google Maps JavaScript API v3 Example: Places Autocomplete</title>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places" type="text/javascript"></script>
+<script type="text/javascript">
+   function initialize() {
+      var input = document.getElementById('searchTextField');
+      var options = {
+        types: ['geocode'] //this should work !
+      };
+      var autocomplete = new google.maps.places.Autocomplete(input, options);
+   }
+   google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+<body>
+   <div>
+      <input id="searchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on">
+   </div>
     <label >
   <input class='input 'type="text" style="padding-left:40px;" placeholder="Set build location">
   </label>

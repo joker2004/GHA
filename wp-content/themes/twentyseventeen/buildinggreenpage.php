@@ -177,7 +177,7 @@ get_header();?>
 
 
           </div>
-      
+
 
 
 
@@ -230,7 +230,7 @@ get_header();?>
   </div>
   </div>
   </div>
-
+<?php get_footer();?>
 <style>
 /*.tab {
     overflow: hidden;

@@ -107,11 +107,12 @@ if( $wpex_port_query->posts ) {
 
                       </div>
                       <div class="check">
-                     <p class="recipe-info xs-hidden"><?php if(get_field( "landarea" ))
-				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Landarea:</span> <b>'.get_field( "landarea" ).'</b><span class="min-right"></span>';if(get_field( "bedrooms" ))
-				 echo '<span class="min-left" >'.'<span class="featured-date icon-enable"></span>'.'<span class="">Bedroom:</span> <b>'.get_field( "bedrooms" ).'</b><span class="min-right"></span>';if(get_field( "bathrooms" ))
-				 echo '<span class="min-left">Bathrooms:</span> <b>'.get_field( "bathrooms" ).'</b><span class="min-right"></span>'; if(get_field( "carspaces" ))
-				 echo '<span class="min-left">Carspaces:</span> <b>'.get_field( "carspaces" ).'</b><span class="min-right"></span>';?></p> <?php  ?>
+                     <p class="recipe-info xs-hidden"><?php
+				 echo '<span class="min-left" ></span><span class="min-right"></span>';
+         echo '<span class="min-left" >'.'<span class="featured-area icon-enable"></span>'.'<span class=""></span> <b>'.get_field( "landarea" ).'</b><span class="min-right"></span>';if(get_field( "bedrooms" ))
+				 echo '<span class="min-left" >'.'<span class="featured-bedroom icon-enable"></span>'.'<span class="">Be</span> <b>'.get_field( "bedrooms" ).'</b><span class="min-right"></span>';if(get_field( "bathrooms" ))
+				 echo '<span class="min-left">'.'<span class="featured-bathroom icon-enable"></span>'.'<span class="">Ba</span> <b>'.get_field( "bathrooms" ).'</b><span class="min-right"></span>'; if(get_field( "carspaces" ))
+				 echo '<span class="min-left">'.'<span class="featured-carspace icon-enable"></span>'.'<span class="">C</span> <b>'.get_field( "carspaces" ).'</b><span class="min-right"></span>';?></p>
 
               </div>
 
@@ -183,13 +184,26 @@ padding: 0px 0 14px 0;
 font-family:Helvetica-light;
 }
 
-.icon-enable.featured-date {
-  background: rgba(0, 0, 0, 0) url("images/timer.png") no-repeat scroll left 5px / 18px 18px;
+.icon-enable.featured-area {
+  background: rgba(0, 0, 0, 0) url("<?php echo get_template_directory_uri();?>/images/Images/gha-area.png") no-repeat scroll left 5px / 18px 18px;
   padding-left: 25px;
   line-height:26px;
 }
-
-
+.icon-enable.featured-bedroom {
+  background: rgba(0, 0, 0, 0) url("<?php echo get_template_directory_uri();?>/images/Images/gha-bedroom.png") no-repeat scroll left 5px / 18px 18px;
+  padding-left: 25px;
+  line-height:26px;
+}
+.icon-enable.featured-bathroom {
+  background: rgba(0, 0, 0, 0) url("<?php echo get_template_directory_uri();?>/images/Images/gha-bathroom.png") no-repeat scroll left 5px / 18px 18px;
+  padding-left: 25px;
+  line-height:26px;
+}
+.icon-enable.featured-carspace {
+  background: rgba(0, 0, 0, 0) url("<?php echo get_template_directory_uri();?>/images/Images/gha-carspace.png") no-repeat scroll left 5px / 18px 18px;
+  padding-left: 25px;
+  line-height:26px;
+}
 .posts-content
   {
     display: flex;

@@ -16,24 +16,36 @@ the_post_thumbnail();
 </section>
 <div class="top_rectangle"></div>
 
-<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;">Showing 1-5 of 5 Energy efficient home designs</p>
+<p style="margin-left:262px; width:303px;font-size:14px;font-family:lato;"><?php
+    // Number of products in category
+    $pagenum = $query->query_vars['paged'] < 1 ? 1 : $query->query_vars['paged'];
+    $first = ( ( $pagenum - 1 ) * $query->query_vars['posts_per_page'] ) + 1;
+  //  $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+
+    echo '<p class="results-count">Showing ' . $remainPost . ' of ' .$total_post. ' products in this category</p>';
+    /*Showing 1-5 of 5 Energy efficient home designs*/
+?></p>
+
 </div>
+
 
 <div class="posts-content">
 <?php
 //$exclude_id
 $r_arg = array(
     'post_type' => 'home',
+    'posts_per_page'	=> -1,
     /*'post_status' => 'publish',
     'posts_per_page'	=> -1,
     'tax_query' => array(
           array(
-            'taxonomy' => 'recipe_category',
+            'taxonomy' => 'cat',
             'field' => 'slug',
             'terms' => $slug_t,
           ),
         ),*/
   );
+
 if($exclude_id){
   $r_arg['post__not_in'] = array($exclude_id);
 }
@@ -47,14 +59,14 @@ if( $wpex_port_query->posts ) {
   $remainPost = $total_post - 6;
    while ( $wpex_port_query->have_posts() ) : $wpex_port_query->the_post();
 
-    $termsArray = get_the_terms( $post->ID, "recipe_category" );
+    $termsArray = get_the_terms( $post->ID, "homes_category" );
     $termsString = "";
     $curTerms = array();
     foreach ( $termsArray as $term ) {
       $curTerms[] = $term->slug;
       $termsString .= $term->slug.' ';
     }
-    if(count($curTerms) == 1 && $curTerms[0] == 'featured-recipes') continue;
+    if(count($curTerms) == 1 && $curTerms[0] == 'featured') continue;
     if($i >= 6) {
       $hideShowClass = " inactive";
     } $i++;
@@ -89,6 +101,7 @@ if( $wpex_port_query->posts ) {
    <?php } ?>
   <div class="rp-item-inner">
               <?php  $fimage_url = ''; $url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'medium' ); if($url && isset($url[0])){$fimage_url = $url[0];}
+
               //echo $fimage_url;
     /*$postImageId = get_post_thumbnail_id($post->ID);
     //echo $postImageId;
@@ -145,13 +158,14 @@ if( $wpex_port_query->posts ) {
   wp_reset_postdata();
   $total_post = $i;
   $remainPost = $total_post - 6;
+    echo '<p class="results-count">Showing ' . $remainPost . ' of ' .$total_post. ' products in this category</p>';
 }
 ?>
 
           <br class="clear" />
 </div>
 <?php $showLoadMore = ""; if($remainPost < 1) { $remainPost = 0;  $showLoadMore = " style='display:none' ";  } ?>
-          <a href="javascript:void(0)" id="loadMoreAction" data-curpage="1" class="btn-red" <?php echo $showLoadMore; ?> data-total="<?php echo $total_post; ?>">Show more recipes (<span><?php echo $remainPost; ?></span>)</a>
+          <a href="javascript:void(0)" id="loadMoreAction" data-curpage="1" class="btn-red" <?php echo $showLoadMore; ?> data-total="<?php echo $total_post; ?>">Show more(<span><?php echo $remainPost; ?></span>)</a>
       </div>
 
       <p class="p">Showing 1-5 of 5 Energy efficient home designs</p>

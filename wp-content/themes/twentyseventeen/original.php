@@ -1,5 +1,5 @@
 <?php
-/* Template Name: HomeDesign */
+/* Template Name:  */
 get_header();?>
 <?php
 if ( has_post_thumbnail() ) {
